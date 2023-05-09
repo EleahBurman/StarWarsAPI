@@ -49,17 +49,16 @@ a:hover{
 }
 
 .starship-details {
-  border: solid 2px;
-  background-color: rgba(30, 74, 69, 0.615);
-  border-radius: 50%;
   display: flex;
-  margin: 30px;
-  width: 150px;
-  height: 150px;
-  box-shadow: 0 0 30px #66b9e6;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  align-content: center;
+  width: 450px;
+  padding: 0px 0px 10px 20px;
+  background-color: rgba(30, 74, 69, 0.615);
+  box-shadow: 0 0 30px #66b9e6;
+  border-radius: 10px;
 }
 
 h1 {
@@ -113,7 +112,8 @@ h1 {
   justify-content: center;
   align-items: left;
   align-content: center;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0px 20px 10px 20px;
   background-color: rgba(30, 74, 69, 0.615);
+  box-shadow: 0 0 30px #66b9e6;
 }
