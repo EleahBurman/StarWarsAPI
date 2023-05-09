@@ -20,12 +20,17 @@ const StarshipDetails = () => {
   const { starshipId } = useParams()
   
   useEffect(() => {
+    // Fetch starship details when component mounts or starshipId is updated
     const fetchDetails = async () => {
+      // Call getStarship function with starshipId and assign the result to starshipData variable
       const starshipData = await getStarship(starshipId)
+      // Set the state of starshipDetails to the retrieved data
       setStarshipDetails(starshipData)
     }
+    // Call fetchDetails function
     fetchDetails()
   }, [starshipId])
+  
 
   console.log('starship', starshipDetails)
   

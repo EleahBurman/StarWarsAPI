@@ -11,12 +11,17 @@ const PlanetDetails = () => {
   const { planetId } = useParams()
 
   useEffect(() => {
+    // Define an async function called fetchPlanetDetails
     const fetchPlanetDetails = async () => {
+      // Call the getPlanet function with the planetId parameter and await the result
       const planetData = await getPlanet(planetId)
+      // Set the planetDetails state with the data fetched from the API
       setPlanetDetails(planetData)
     }
+    // Call the fetchPlanetDetails function when the planetId state changes
     fetchPlanetDetails()
   }, [planetId])
+  
 
   const capitalizeFirstLetter = (str) => {
     if (str && typeof str === 'string') {
