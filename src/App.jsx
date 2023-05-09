@@ -1,21 +1,24 @@
 // npm modules
-//import { useState } from 'react'
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
-//components
-import StarshipDetails from './components/StarshipPage/StarshipPage'
-import StarShips from './components/Starships/Starships'
+// components
+import NavBar from './components/NavBar/NavBar'
+import Landing from './components/Landing/Landing'
+import Starships from './components/Starships/Starships'
+import StarshipDetails from './components/Starships/StarshipDetails'
+
+// css
+import './App.css'
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
     <>
-      <Routes>
-        <Route path='/' element={<StarShips/>}/>
-        <Route path='/starShips/:starshipId' element={<StarshipDetails/>}/>
-      </Routes>
+    <NavBar />
+    <Routes>
+      <Route path='/' element={<Landing />} />
+      <Route path='/starships' element={<Starships />} />
+      <Route path='/starships/:starshipId' element={<StarshipDetails />} />
+    </Routes>
     </>
   )
 }
