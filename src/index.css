@@ -48,6 +48,10 @@ a:hover{
   text-align: center;
 }
 
+.starship-card:hover {
+  background-color: rgba(88, 206, 192, 0.615);
+}
+
 .starship-details {
   display: flex;
   flex-direction: column;
@@ -59,6 +63,10 @@ a:hover{
   background-color: rgba(30, 74, 69, 0.615);
   box-shadow: 0 0 30px rgba(146, 207, 200, 0.8);
   border-radius: 10px;
+}
+
+.starship-details:hover {
+  background-color: rgba(88, 206, 192, 0.615);
 }
 
 h1 {
@@ -98,6 +106,9 @@ h1 {
   font-size: 18px;
 }
 
+.planet-card:hover{
+  background-color: rgba(88, 206, 192, 0.615);
+}
 .planet-details-container {
   display: flex;
   margin: 10px;
@@ -116,4 +127,8 @@ h1 {
   padding: 0px 20px 10px 20px;
   background-color: rgba(30, 74, 69, 0.615);
   box-shadow: 0 0 30px rgba(146, 207, 200, 0.8);
+}
+
+.planet-details:hover{
+  background-color: rgba(88, 206, 192, 0.615);
 }
