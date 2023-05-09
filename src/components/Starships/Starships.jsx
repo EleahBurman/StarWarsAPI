@@ -19,13 +19,20 @@ const Starships = () => {
     return str
       .split(/\b/)
       .map(word => {
-        if (word.trim() === '-') {
-          return '-';
+        if (word.trim() === '-') { 
+          // if word is a hyphen, return it
+          return '-'
         }
-        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        // if the first letter is already uppercase or the entire word is in uppercase, return the word as is
+        if (word.charAt(0).toUpperCase() === word.charAt(0) || word.toUpperCase() === word) {
+          return word
+        }
+        // capitalize the first letter and make the rest of the letters lowercase
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
       })
-      .join('');
-  };
+      .join('')
+  }
+  
 
   if (!starships.length) return <h1>Loading Starships...</h1>
 
