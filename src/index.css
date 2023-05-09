@@ -1,11 +1,14 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Star Jedi', arial;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: url('assets/images/backgroundstarwars.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,56 +17,97 @@
   -webkit-text-size-adjust: 100%;
 }
 
+
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-body {
-  margin: 0;
+a:hover{
+  color: yellow;
+}
+
+.card-container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.starship-card {
+  display: flex;
+  background-color: rgba(30, 74, 69, 0.615);
+  border-radius: 5px;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.starship-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  align-content: center;
+  width: 450px;
+  padding: 0px 0px 10px 20px;
+  background-color: rgba(30, 74, 69, 0.615);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: 'Star Jedi';
+  text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.starship-details > * {
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.planet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planet-card {
+  border: solid 2px;
+  background-color: rgba(30, 74, 69, 0.615);
+  border-radius: 50%;
+  display: flex;
+  margin: 30px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 30px #48abe0;
+}
+
+.planet-card  > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.planet-details-container {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-details {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  align-content: center;
+  border-radius: 5px;
+  padding: 0px 20px 10px 20px;
+  background-color: rgba(30, 74, 69, 0.615);
 }
