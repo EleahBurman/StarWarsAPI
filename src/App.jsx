@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import Landing from './components/Landing/Landing'
 import Starships from './components/Starships/Starships'
-import StarshipDetails from './components/Starships/StarshipDetails'
+import StarshipDetails from './components/Starships/StarshipPage'
 import Planets from './components/Planets/Planets'
 import PlanetDetails from './components/Planets/PlanetDetails'
 
